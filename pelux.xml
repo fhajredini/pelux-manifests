@@ -31,9 +31,9 @@
            path="sources/meta-bistro" />
 
   <project remote="github"
-           revision="7ced17fe20a69c35737fa794f696e4f9d5c00a19"
+           revision="12243907c1da7b66a95562a9bbedc858ad5f36ba"
            upstream="master"
-           name="Pelagicore/meta-pelux"
+           name="fhajredini/meta-pelux"
            path="sources/meta-pelux" />
 
   <project remote="github"
