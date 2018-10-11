@@ -14,7 +14,7 @@ void buildOnYoctoNode(String variant, String image) {
         checkout scm
         def manifests = load "ci-scripts/yocto.groovy"
 
-        manifests.buildManifest(variant, image)
+        manifests.buildManifest(variant, image, String layer="", String layerPath="")
     }
 }
 
