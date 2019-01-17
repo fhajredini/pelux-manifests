@@ -12,59 +12,53 @@
 
   <!-- Base stuff -->
   <project remote="yocto"
-           upstream="sumo"
-           revision="fa962ec72f8a8337eaae71ab622e340f6ef56395"
+           upstream="thud"
+           revision="4046716c2f315308048d568e5b606382ef7bc38b"
            name="poky"
            path="sources/poky"/>
 
   <project remote="oe"
-           upstream="sumo"
-           revision="8760facba1bceb299b3613b8955621ddaa3d4c3f"
+           upstream="thud"
+           revision="a15d7f6ebcb0ed76c83c28f854d55e3f9d5b3677"
            name="meta-openembedded"
            path="sources/meta-openembedded"/>
 
   <!-- Pelagicore/Luxoft stuff -->
   <project remote="github"
-           upstream="sumo"
-           revision="63751568790d2a4025270e03e798804bcfb52a2b"
+           upstream="master"
+           revision="65ecd9dd5c360b400a68803ed13957a9ed865568"
            name="Pelagicore/meta-bistro"
            path="sources/meta-bistro"/>
 
   <project remote="github"
-           upstream="sumo"
-           revision="27331572026b0a3fb467846d2beee893dd16180d"
+           upstream="master"
+           revision="5702483c89eeeb427675162d44244352e92f6f92"
            name="Pelagicore/meta-pelux"
-           path="sources/meta-pelux"/>
+           path="sources/meta-pelux" />
 
   <project remote="github"
-           upstream="sumo"
-           revision="f6e35df5da50f97ca003db99e3d99f10e8b695b6"
+           upstream="master"
+           revision="b4844275d739f2295a0e0a524cc7b072cc46191d"
            name="Pelagicore/meta-template"
            path="sources/meta-template"/>
 
   <!-- 3rd-party stuff -->
   <project remote="github"
-           upstream="sumo"
-           revision="f2d65d87485ada5a2d3a744fd7b9e46ec7e6b9f2"
+           upstream="thud"
+           revision="ed9d6a1086acffe43c090240832eeb9ad6b70883"
            name="sbabic/meta-swupdate"
            path="sources/meta-swupdate"/>
 
   <project remote="yocto"
-           upstream="sumo"
-           revision="ed2038c935777d1336c17989d454f4e9c95fea7f"
+           upstream="thud"
+           revision="cf352d74935ec17964700f5b4f86f9a63b3a2183"
            name="meta-virtualization"
            path="sources/meta-virtualization"/>
 
-  <project remote="github"
-           upstream="master"
-           revision="7110b507322ceb8aa1ff28c7eebf4c0be695d939"
-           name="01org/meta-security-isafw"
-           path="sources/meta-security-isafw"/>
-           
   <!-- GENIVI stuff -->
   <project remote="github"
-           upstream="14.x-sumo"
-           revision="7a452dc9b803912da56e358c7aa3daa7a2bd695f"
+           upstream="master"
+           revision="13f502d06ef7732dc5f7c5de767141450496e4f6"
            name="GENIVI/meta-ivi"
            path="sources/meta-ivi"/>
 
@@ -76,27 +70,27 @@
            path="sources/meta-qt5"/>
 
   <project remote="code.qt"
-           upstream="sumo"
-           revision="880ecb7a6e993a986d24c9a8b813bf2a48f51d24"
+           upstream="thud"
+           revision="f5a39be03ca9d7f849ecab701db85d3a35364cc3"
            name="yocto/meta-boot2qt"
            path="sources/meta-boot2qt"/>
 
   <!-- BSP layers -->
   <project remote="yocto"
-           upstream="sumo"
-           revision="90af97d23fb2a56187c2fe2a3f4f4190d7cc2605"
+           upstream="thud"
+           revision="a7d94d8fecd31af7c58ba5e3d4bd80e3f134f9d3"
            name="meta-intel"
            path="sources/meta-intel"/>
 
   <project remote="yocto"
-           upstream="sumo"
-           revision="2d40b000021bc8a9ef7f329ed0ad410f8d227b97"
+           upstream="thud"
+           revision="fa217ed21cedc58e13dda23a0237134333787a01"
            name="meta-raspberrypi"
            path="sources/meta-raspberrypi"/>
 
   <project remote="github"
-           upstream="sumo"
-           revision="f022a33b18a42b5355a1566d69459340c1c48c0f"
+           upstream="master"
+           revision="2e0fcff50f04f361782e7b85b17fdfa51239e25a"
            name="Pelagicore/meta-arp"
            path="sources/meta-arp"/>
 
