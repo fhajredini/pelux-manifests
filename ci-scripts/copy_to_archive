@@ -24,6 +24,7 @@ QEMU_ARCH="qemux86-64"
 IMAGE_BASENAME="core-image-pelux"
 SDK_BASENAME="pelux-glibc"
 
+ls ${IMAGE_DIR}
 # If there is an QEMU directory
 if [ -d ${IMAGE_DIR}/${QEMU_ARCH} ]; then
     echo "Archiving QEMU image to $ARCHIVE_DIR"
