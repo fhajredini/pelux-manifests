@@ -230,7 +230,10 @@ String getStringEnvVar(String envVarName, String defaultValue) {
     echo "Value for ${envVarName} is ${returnValue}"
     return returnValue
 }
-
+void runMuxpi(String yoctoDir, String imageName, String variantName){
+    vagrant("/vagrant/ci-scripts/ssh-to-mux")
+    //vagrant("/vagrant/ci-scripts/ssh-to-mux")
+}
 void buildManifest(String variantName, String imageName, String layerToReplace="", String newLayerPath="") {
     String yoctoDirInWorkspace = "pelux_yocto"
     String yoctoDir = "/vagrant/${yoctoDirInWorkspace}" // On bind mount to avoid overlay2 fs.
@@ -255,6 +258,8 @@ void buildManifest(String variantName, String imageName, String layerToReplace="
         boolean doArchiveCache = getBoolEnvVar("ARCHIVE_CACHE", false)
         boolean smokeTests = getBoolEnvVar("SMOKE_TEST", false)
         boolean bitbakeTests = getBoolEnvVar("BITBAKE_TEST", false)
+        boolean muxpiTests = getBoolEnvVar("MUXPI_TEST", false)
+
         setupBitbake(yoctoDir, templateConf, doArchiveCache, smokeTests, analyzeImage)
         setupCache(yoctoDir, yoctoCacheURL)
 
@@ -268,6 +273,9 @@ void buildManifest(String variantName, String imageName, String layerToReplace="
                 if(bitbakeTests) {
                     runBitbakeTests(yoctoDir)
                 }
+            }
+            if (muxpiTests){
+                runMuxpi(yoctoDir,imageName,variantName)
             }
 
         } finally {
